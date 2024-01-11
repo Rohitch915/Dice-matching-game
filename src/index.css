@@ -1,0 +1,190 @@
+.my-container{
+  padding: 50px 150px;
+}
+.intro{
+  display: flex;
+  gap: 20px;
+
+}
+.start-btn-container{
+    display: flex;
+    flex-direction: column;
+   
+    margin-top: 15%;
+}
+.heading{
+  font-weight: bolder;
+  font-size: 50px;
+}
+.start-btn{
+  width: 130px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  border: 0px;
+}
+.start-btn:hover{
+  animation: blackToWhite 0.5s linear ;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+@keyframes blackToWhite {
+  from{
+    background-color: black;
+    color: white;
+  }
+  to{
+    background-color: white;
+    color: black;
+  }
+  
+}
+.first{
+  display: flex;
+  justify-content: space-between;
+}
+.score-div{
+  display: flex;
+  flex-direction: column;
+}
+.score{
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+}
+.score-text{
+  font-size: 22px;
+  margin-top: -50px;
+}
+.numbers-div{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.numbers{
+  display: flex;
+  gap: 10px;
+}
+.num{
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 55px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.num:hover{
+  background-color: black;
+  color: white;
+}
+.number-text{
+ text-align: end;
+}
+.dice-div{
+  text-align: center;
+  font-size: 23px;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    
+    align-items: center;
+}
+.btn{
+   width: 230px;
+   height: 42px;
+   border-radius: 3px;
+   border: 0px;
+   cursor: pointer;
+}
+.black-background{
+  background-color: black;
+  color: white;
+}
+.reset-btn{
+  background-color: white;
+  border: 1px solid black;
+  
+}
+@keyframes whiteToBlack {
+  from{
+    background-color: white;
+  }
+  to{
+    background-color: black;
+  }
+  
+}
+.reset-btn:hover{
+  animation: whiteToBlack 0.5s linear;
+  background-color: black;
+  color: white;
+}
+.rule-btn{
+  background-color: black;
+  color: white;
+  
+}
+.rule-btn:hover{
+  animation: blackToWhite 0.5s linear;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.rules{
+  position: fixed;
+  width: 500px;
+  height: 200px;
+  background-color: plum;
+  border-radius: 3px;
+  padding: 10px;
+  left: 492px;
+  top:233px;
+}
+.startAnime{
+  animation: startAnimate 0.5s linear;
+}
+@keyframes startAnimate {
+  from{
+      top:-300px;
+  }
+  to{
+     top:240px;
+  }
+  
+}
+.dice{
+  cursor: pointer;
+}
+.alert{
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  font-size: 18px;
+  color: red;
+}
+.hidden{
+  visibility: hidden;
+}
+.rules-li{
+  position: relative;
+}
+.rules-li> li{
+   margin-bottom: 10px;
+}
+.remove-rule{
+  border: 0px;
+  font-size: 28px;
+  position: absolute;
+  right: -10px;
+  top: -26px;
+  background-color: red;
+  width: 34px;
+  border-radius: 3px;
+  cursor: pointer;
+}
